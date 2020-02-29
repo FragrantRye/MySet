@@ -291,7 +291,7 @@ namespace xfz {
 			}
 		}
 		AVL_fix_up(fix_location);
-		delete it.ptr;
+		free(it.ptr);
 		count--;
 	}
 
