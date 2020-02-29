@@ -1,4 +1,4 @@
 # MySet
-使用AVL树实现的set容器
+A set based on AVL tree
 
-实现了std::set的大部分接口
+Implemented almost interface of std::set
