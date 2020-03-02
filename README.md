@@ -52,11 +52,11 @@ Use random int between 0 and 10,000,000
 Time cost(ms):
 |   |xfz::set|std::set|Optimization ratio|
 |---|---|---|---|
-|Insert|17109|15534|+10.1%|
-|Find|17396|20163|-13.7%|
-|Travel|18479|10710|+72.5%|
-|Erase|20278|27329|-25.8%|
+|Insert|17109|15534|-10.1%|
+|Find|17396|20163|+13.7%|
+|Travel|18479|10710|-72.5%|
+|Erase|20278|27329|+25.8%|
 
 Test CPU: Intel i7-9750H @3.2GHz
 ### Conclution
-In the scenario of frequent query, less insertion and traversal, the std::set is better than std::set.
+In the scenario of frequent query, less insertion and traversal, the xfz::set is better than std::set.
