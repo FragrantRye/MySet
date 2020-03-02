@@ -13,7 +13,7 @@ int main(){
     std::cout<<*it<<endl;
     myset.erase(it);
     for(int i:myset)
-        cout<<i<<' ';
+        std::cout<<i<<' ';
     return 0;
 }
 ```
@@ -42,7 +42,7 @@ class myset {
     void clear();
     void insert(const T& data);
     void erase(iterator it);
-    bool test_height();
+    bool test_height(); //For bug location only
 };
 ```
 
@@ -57,5 +57,6 @@ Time cost(ms):
 |Travel|18479|10710|+72.5%|
 |Erase|20278|27329|-25.8%|
 
+Test CPU: Intel i7-9750H @3.2GHz
 ### Conclution
 In the scenario of frequent query, less insertion and traversal, the std::set is better than std::set.
